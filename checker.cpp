@@ -46,7 +46,7 @@ bool batteryIsOk(float temperature, float soc, float chargeRate) { //aka delegat
   bool socOk = isSocOk(soc);
   bool chargeRateOk = isChargeRateOk(fchargeRate);
   
-  (tempOk && socOk && chargeRateOk) ? return true : return false;
+  return (tempOk && socOk && chargeRateOk);
 }
 
 
